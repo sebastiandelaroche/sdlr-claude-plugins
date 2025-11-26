@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "prp-framework",
-      "source": ".",
+      "source": "./",
       "description": "Product Requirement Prompts (PRP) workflow for AI-assisted development",
       "version": "1.0.0"
     }

@@ -14,32 +14,18 @@ A **Product Requirement Prompt** (PRP) is a structured document that provides an
 
 ## Installation
 
-### Option 1: GitHub Template (Recommended)
-
-1. Click "Use this template" on GitHub
-2. Clone your new repository
-3. Fill in `CLAUDE.md` with your project details
-
-### Option 2: Claude Code Plugin
-
 ```bash
-# Add the marketplace (if not already added)
-/plugin marketplace add owner/prp-agentic
+# Step 1: Install the plugin
+/plugin install github:sebastiandelaroche/prp-agentic
 
-# Install the plugin
-/plugin install prp-framework
+# Step 2: Initialize project structure
+/prp-init
 ```
 
-### Option 3: Manual Copy
-
-```bash
-# Clone and copy files
-git clone https://github.com/your-username/prp-agentic.git
-cp -r prp-agentic/.claude-plugin /path/to/your/project/
-cp -r prp-agentic/PRPs /path/to/your/project/
-cp -r prp-agentic/scripts /path/to/your/project/
-cp prp-agentic/CLAUDE.md /path/to/your/project/
-```
+This will:
+1. Install all PRP slash commands (`/prp-*`)
+2. Create the folder structure (`PRPs/`, `scripts/`)
+3. Download templates from the repository
 
 ## Setup
 
@@ -68,6 +54,7 @@ After installation:
 
 | Command | Description |
 |---------|-------------|
+| `/prp-init` | Initialize PRP framework in current project |
 | `/prp-research [topic]` | Research a topic, documentation, or codebase area |
 | `/prp-create [feature]` | Create a PRP for a new feature |
 | `/prp-verify [prp-file]` | Verify a PRP is complete and ready for implementation |
@@ -136,31 +123,19 @@ Reviews the implementation for quality and security.
 
 ## Directory Structure
 
+After running `/prp-init`, your project will have:
+
 ```
 your-project/
-├── .claude-plugin/           # Plugin distribution
-│   ├── plugin.json           # Plugin manifest
-│   ├── commands/             # Slash commands
-│   │   ├── prp-research.md
-│   │   ├── prp-create.md
-│   │   ├── prp-verify.md
-│   │   ├── prp-implement.md
-│   │   ├── prp-test.md
-│   │   └── prp-review.md
-│   └── hooks/
-│       └── notifications.json
-├── .claude/
-│   └── settings.json         # Hook configuration
-├── scripts/
-│   └── notify-slack.sh       # Slack notifications
 ├── PRPs/
 │   ├── templates/
 │   │   └── prp-template.md   # PRP template
 │   ├── research/             # Research outputs
 │   ├── reviews/              # Code review reports
-│   ├── feature-a.md          # Your PRPs go here
-│   └── feature-b.md
-└── CLAUDE.md                 # Project context for AI
+│   └── feature-a.md          # Your PRPs go here
+├── scripts/
+│   └── notify-slack.sh       # Slack notifications
+└── CLAUDE.md                 # Project context (edit this!)
 ```
 
 ## Features
@@ -208,14 +183,6 @@ PRPs can optionally reference research files:
 - If no research listed, that's fine - the section is optional
 
 ## Customization
-
-### Modify Commands
-
-Edit files in `.claude-plugin/commands/` to customize:
-- Output format
-- Validation steps
-- Review checklist
-- Add new commands
 
 ### Modify Template
 

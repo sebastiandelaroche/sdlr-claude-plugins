@@ -6,6 +6,7 @@
   "repository": "https://github.com/sebastiandelaroche/prp-agentic",
   "license": "MIT",
   "commands": [
+    "commands/prp-init.md",
     "commands/prp-research.md",
     "commands/prp-create.md",
     "commands/prp-verify.md",
@@ -15,9 +16,5 @@
   ],
   "hooks": [
     "hooks/notifications.json"
-  ],
-  "requiredFiles": [
-    "PRPs/templates/prp-template.md",
-    "CLAUDE.md"
   ]
 }

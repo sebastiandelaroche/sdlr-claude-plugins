@@ -1,5 +1,8 @@
 {
   "name": "claude-code-plugins",
+  "metadata": {
+    "description": "A collection of Claude Code plugins"
+  },
   "owner": {
     "name": "Sebastian De La Roche"
   },
@@ -8,11 +11,7 @@
       "name": "prp-agentic",
       "description": "Product Requirement Prompts (PRP) workflow for AI-assisted development",
       "version": "1.0.0",
-      "author": {
-        "name": "Sebastian De La Roche"
-      },
-      "source": "./plugins/prp-agentic",
-      "category": "development"
+      "source": "./plugins/prp-agentic"
     }
   ]
 }

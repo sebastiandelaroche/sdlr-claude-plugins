@@ -32,12 +32,12 @@ Download files from the PRP framework repository:
 
 **PRP Template:**
 ```bash
-curl -sL "https://raw.githubusercontent.com/sebastiandelaroche/claude-code-plugins/main/plugins/prp-agentic/templates/prp-template.md" -o PRPs/templates/prp-template.md
+curl -sL "https://raw.githubusercontent.com/sebastiandelaroche/sdlr-claude-plugins/main/plugins/prp-agentic/templates/prp-template.md" -o PRPs/templates/prp-template.md
 ```
 
 **CLAUDE.md Template:**
 ```bash
-curl -sL "https://raw.githubusercontent.com/sebastiandelaroche/claude-code-plugins/main/plugins/prp-agentic/templates/CLAUDE.md" -o CLAUDE.md
+curl -sL "https://raw.githubusercontent.com/sebastiandelaroche/sdlr-claude-plugins/main/plugins/prp-agentic/templates/CLAUDE.md" -o CLAUDE.md
 ```
 
 ### 4. Create .gitkeep Files

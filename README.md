@@ -5,7 +5,7 @@ A collection of Claude Code plugins for enhanced AI-assisted development.
 ## Add This Marketplace
 
 ```
-/plugin marketplace add sebastiandelaroche/claude-code-plugins
+/plugin marketplace add sebastiandelaroche/sdlr-claude-plugins
 ```
 
 ## Available Plugins

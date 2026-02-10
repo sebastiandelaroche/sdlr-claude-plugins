@@ -16,7 +16,7 @@ A **Product Requirement Prompt** (PRP) is a structured document that provides an
 
 ```bash
 # Step 1: Add the marketplace
-/plugin marketplace add sebastiandelaroche/claude-code-plugins
+/plugin marketplace add sebastiandelaroche/sdlr-claude-plugins
 
 # Step 2: Install the plugin
 /plugin install prp-agentic
